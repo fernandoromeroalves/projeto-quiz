@@ -11,8 +11,8 @@ function showQuestion(){
     if(questions[currentQuestion]){
         q = questions[currentQuestion];
 
-        let pct = Math.floor(currentQuestion / questions.length) * 100;
-        document.querySelector('.progress--bar').style.width = `${pct}%`
+        let pct = Math.floor((currentQuestion / questions.length) * 100);
+        document.querySelector('.progress--bar').style.width = `${pct}%`;
 
         document.querySelector('.scoreArea').style.display = 'none';
         document.querySelector('.questionArea').style.display = 'block';
@@ -31,7 +31,7 @@ let optionsHtml = '';
             item.addEventListener('click', optionClickEvent);
         })
     } else{
-        //acabou as questões.
+        finishQuiz();
     }
 }
 
@@ -44,4 +44,11 @@ function optionClickEvent(e){
 
     currentQuestion++;
     showQuestion()
+}
+
+function finishQuiz(){
+    document.querySelector('.scoreArea').style.display = 'block';
+    document.querySelector('.questionArea').style.display = 'none';
+    document.querySelector('.progress--bar').style.width = '100%';
+    
 }
