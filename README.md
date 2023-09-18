@@ -1,4 +1,5 @@
 # projeto-quiz
  Projeto de Quíz desenvolvido para fins de estudo
 
- <a href=""><img src="Captura.png" alt=""></a>
+ <a href="https://fernandoromeroalves.github.io/projeto-quiz/
+"><img src="Captura.png" alt=""></a>
