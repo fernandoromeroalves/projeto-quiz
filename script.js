@@ -60,7 +60,7 @@ function finishQuiz(){
         document.querySelector('.scoreText1').innerHTML = 'Muito Bom!';
         document.querySelector('.scorePct').style.color = '#00FF00'
     } else if (points >= 70){
-        document.querySelector('.scoreText1').innerHTML = 'Parebéns';
+        document.querySelector('.scoreText1').innerHTML = 'Parabéns;
         document.querySelector('.scorePct').style.color = '#0D630D'
     }
 
